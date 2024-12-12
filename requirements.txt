@@ -1,0 +1,8 @@
+Flask
+elasticsearch
+python-dotenv
+pytest
+pytest-flask
+gunicorn
+pymongo
+redis
