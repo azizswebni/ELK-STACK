@@ -23,11 +23,11 @@ cd monitoring-elk-flask
 Create a `.env` file in the root directory and configure the following:
 ```env
 FLASK_SECRET_KEY=some_secure_key
-ELASTICSEARCH_HOST=http://localhost:9200
+ELASTICSEARCH_HOST=http://elasticsearch:9200
 MONGODB_URI=mongodb://localhost:27017
 MONGO_DB_NAME=logs_db
 MONGO_COLLECTION_NAME=logs
-REDIS_HOST=localhost
+REDIS_HOST=redis
 REDIS_PORT=6379
 KIBANA_API=http://localhost:5601
 ```

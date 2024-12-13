@@ -24,7 +24,11 @@ mongo_db = mongo_client[os.getenv("MONGO_DB_NAME", "logs_db")]
 mongo_collection = mongo_db[os.getenv("MONGO_COLLECTION_NAME", "logs")]
 
 # Configuration Redis
-redis_client = Redis(host=os.getenv("REDIS_HOST", "localhost"), port=int(os.getenv("REDIS_PORT", 6379)))
+redis_client = Redis(
+    host=os.getenv("REDIS_HOST", "redis"),
+    port=int(os.getenv("REDIS_PORT", 6379))
+)
+
 
 # Route principale
 @app.route('/')

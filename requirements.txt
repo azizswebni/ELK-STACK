@@ -6,3 +6,5 @@ pytest-flask
 gunicorn
 pymongo
 redis
+urllib3
+elastic-transport
